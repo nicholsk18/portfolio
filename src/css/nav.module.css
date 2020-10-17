@@ -42,6 +42,6 @@
   -webkit-transition: all 0.7s ease;
   transition: all 0.7s ease;
 }
-.nav-link:hover {
+.nav_link:hover {
   background-color: #b8d8d8;
 }
