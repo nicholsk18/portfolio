@@ -23,15 +23,15 @@ const Nav = () => {
           <a className={nav_link}>Projects</a>
         </Link>
 
-        <Link href="/skills">
+        <Link href="/Skills">
           <a className={nav_link}>Skills</a>
         </Link>
 
-        <Link href="/about">
+        <Link href="/About">
           <a className={nav_link}>About Me</a>
         </Link>
 
-        <Link href="/contact">
+        <Link href="/Contact">
           <a className={nav_link}>Contact</a>
         </Link>
       </div>
