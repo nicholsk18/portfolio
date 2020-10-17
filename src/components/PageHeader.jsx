@@ -7,14 +7,14 @@ const PageHeader = ({ pre, text }) => {
       <h1 id={page_title}>
         {pre}
         <br />
-        &lt;<span id="animate-text">{text}</span>&gt;
+        &lt; <span id="animate-text">{text}</span> /&gt;
       </h1>
     )
   }
 
   return (
     <h1 id={page_title}>
-      &lt;<span id="animate-text">{text}</span>&gt;
+      &lt; <span id="animate-text">{text}</span> /&gt;
     </h1>
   )
 }
