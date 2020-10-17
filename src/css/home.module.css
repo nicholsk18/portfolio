@@ -1,0 +1,19 @@
+/***********************************/
+/* HOME START
+/***********************************/
+#welcome_section {
+  margin: 0 auto;
+  text-align: center;
+}
+#home_info {
+  font-size: 3rem;
+  margin-top: 0;
+}
+.home_img {
+  margin-top: 50px;
+  text-align: center;
+}
+.home_img img {
+  margin: 0 auto;
+  text-align: center;
+}
