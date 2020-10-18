@@ -9,18 +9,7 @@ const PageHeader = ({ pre, text }) => {
       <h1 id={page_title}>
         {pre}
         <br />
-        &lt;{' '}
-        {setTimeout(
-          () => (
-            // textArray.map((letter) => (
-            <span id="animate-text" key="a">
-              {a}
-            </span>
-            // ))
-          ),
-          5000
-        )}
-        /&gt;
+        &lt; <span id="animate-text">{text}</span> /&gt;
       </h1>
     )
   }

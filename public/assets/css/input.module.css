@@ -1,0 +1,18 @@
+#contact_form {
+  border: 1px solid #4f6367;
+  border-radius: 25px;
+  width: 750px;
+  margin: 2rem auto;
+  box-shadow: 4px 4px 4px gray;
+}
+
+.form_group {
+  position: relative;
+  margin: 20px 0;
+}
+
+#name_label,
+#email_label,
+#subject_label {
+  background-color: red;
+}
