@@ -12,6 +12,7 @@
   "license": "MIT",
   "dependencies": {
     "next": "^9.5.5",
+    "prettierrc": "0.0.0-5",
     "react": "^16.14.0",
     "react-dom": "^16.14.0"
   },

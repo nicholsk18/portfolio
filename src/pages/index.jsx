@@ -5,6 +5,7 @@ import { welcome_section, home_img } from '../../public/assets/css/home.module.c
 import Layout from '../components/Layout'
 
 const Main = () => {
+
   return (
     <Layout>
       <Head>
