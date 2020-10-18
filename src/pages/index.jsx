@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import PageHeader from '../components/PageHeader'
-import { welcome_section, home_img } from '../css/home.module.css'
+import { welcome_section, home_img } from '../../public/assets/css/home.module.css'
 import Layout from '../components/Layout'
 
 const Main = () => {

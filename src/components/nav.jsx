@@ -6,7 +6,7 @@ import {
   nav_sub_title,
   nav_link,
   active,
-} from '../css/nav.module.css'
+} from '../../public/assets/css/nav.module.css'
 
 const Nav = () => {
   return (

@@ -1,4 +1,4 @@
-import { container, page_container } from '../css/layout.module.css'
+import { container, page_container } from '../../public/assets/css/layout.module.css'
 import Nav from '../components/nav'
 
 const Layout = ({ children }) => {

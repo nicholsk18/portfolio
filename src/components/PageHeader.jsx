@@ -1,5 +1,5 @@
 import React from 'react'
-import { page_title } from '../css/layout.module.css'
+import { page_title } from '../../public/assets/css/layout.module.css'
 
 const PageHeader = ({ pre, text }) => {
   if (pre) {
