@@ -11,8 +11,45 @@
   margin: 20px 0;
 }
 
+#name,
+#email,
+#subject,
+#message {
+  position: relative;
+  padding-top: 10px;
+  margin-left: 30px;
+  border: none;
+  border-bottom: 1px solid #6a8d73;
+  width: 90%;
+  background-color: inherit;
+}
+
 #name_label,
 #email_label,
 #subject_label {
-  background-color: red;
+  position: absolute;
+  top: 0;
+  left: 30px;
+  bottom: 0;
+  z-index: 2;
+  opacity: 0.5;
+  transition: 0.3s ease all;
+  margin: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+#name_label:after,
+#email_label:after,
+#subject_label:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  height: 2px;
+  width: 10px;
+  visibility: hidden;
+  background-color: #6a8d73;
+  transition: 0.3s ease all;
 }

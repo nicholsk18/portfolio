@@ -13,6 +13,7 @@ import {
   name,
   email,
   subject,
+  message,
 } from '../../public/assets/css/input.module.css'
 
 const Contact = () => {
@@ -27,19 +28,21 @@ const Contact = () => {
           <Input id={name} type="text" label="Name" />
           <Label id={name_label} label="name" />
         </div>
-        <div className="form_group">
+        <div className={form_group}>
           <Input id={email} type="email" label="Email" />
           <Label id={email_label} label="email" />
         </div>
-        <div className="form_group">
+        <div className={form_group}>
           <Input id={subject} type="text" label="Subject" />
           <Label id={subject_label} label="subject" />
         </div>
-        <Textarea
-          id={'message'}
-          name="message"
-          placeholder="Enter your message here..."
-        />
+        <div className="form_group">
+          <Textarea
+            id={message}
+            name="message"
+            placeholder="Enter your message here..."
+          />
+        </div>
       </form>
     </Layout>
   )

@@ -1,9 +1,5 @@
 const Textarea = ({ id, name, placeholder }) => {
-  return (
-    <div className="form_textarea">
-      <textarea id={name} name={name} placeholder={placeholder}></textarea>
-    </div>
-  )
+  return <textarea id={id} name={name} placeholder={placeholder}></textarea>
 }
 
 export default Textarea
