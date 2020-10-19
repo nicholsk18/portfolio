@@ -5,5 +5,4 @@ const Label = ({ id, label }) => {
     </label>
   )
 }
-
 export default Label
