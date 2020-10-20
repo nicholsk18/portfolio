@@ -1,14 +1,17 @@
 #contact_form {
   border: 1px solid #4f6367;
   border-radius: 25px;
+  background-color: #4f6367;
   width: 750px;
-  margin: 2rem auto;
+  margin: 4rem auto;
+  padding-top: 0px;
+  padding-bottom: 20px;
   box-shadow: 4px 4px 4px gray;
 }
 
 .form_group {
   position: relative;
-  margin: 20px 0;
+  margin: 25px 0;
 }
 
 #name,
@@ -16,25 +19,48 @@
 #subject,
 #message {
   position: relative;
-  padding-top: 10px;
+  padding-top: 20px;
   margin-left: 30px;
   border: none;
-  border-bottom: 1px solid #6a8d73;
+  border-bottom: 1px solid #EEF5DB;
+  color: #EEF5DB;
   width: 90%;
+  font-size: 1.2rem;
   background-color: inherit;
+}
+#message {
+  height: 250px;
+}
+#name:focus,
+#email:focus,
+#subject:focus,
+#message:focus {
+  outline: none;
+}
+
+#name:focus + .animate_line,
+#email:focus + .animate_line,
+#subject:focus + .animate_line,
+#message:focus + .animate_line {
+  width: 90%;
+  margin-left: 30px;
+  background-color: #EEF5DB;
 }
 
 #name_label,
 #email_label,
-#subject_label {
+#subject_label,
+#message_label {
+  color: #EEF5DB;
   position: absolute;
-  top: 0;
-  left: 30px;
+  top: 15px;
+  left: 40px;
   bottom: 0;
   z-index: 2;
-  opacity: 0.5;
+  opacity: 0.7;
   transition: 0.3s ease all;
   margin: 0;
+  font-size: 1.2rem;
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
@@ -42,7 +68,8 @@
 
 #name_label:after,
 #email_label:after,
-#subject_label:after {
+#subject_label:after,
+#message_label:after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -52,4 +79,27 @@
   visibility: hidden;
   background-color: #6a8d73;
   transition: 0.3s ease all;
+}
+
+#name:focus ~ #name_label,
+#email:focus ~ #email_label,
+#subject:focus ~ #subject_label,
+#message:focus ~ #message_label {
+  font-weight: 700;
+  opacity: 1;
+  top: 0;
+  left: 30px;
+  bottom: 100px;
+  color: #EEF5DB;
+  font-size: 1rem;
+}
+
+.animate_line {
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  display: inline-block;
+  transition: 0.3s width ease-in-out;
+  bottom: 0;
+  left: 0;
 }

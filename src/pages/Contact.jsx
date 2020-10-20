@@ -10,10 +10,12 @@ import {
   name_label,
   email_label,
   subject_label,
+  message_label,
   name,
   email,
   subject,
   message,
+  animate_line
 } from '../../public/assets/css/input.module.css'
 
 const Contact = () => {
@@ -25,23 +27,25 @@ const Contact = () => {
       <PageHeader text="Contact" />
       <form id={contact_form} action="">
         <div className={form_group}>
-          <Input id={name} type="text" label="Name" />
+          <Input id={name} type="text" />
+          <div className={animate_line}></div>
           <Label id={name_label} label="name" />
         </div>
         <div className={form_group}>
-          <Input id={email} type="email" label="Email" />
+          <Input id={email} type="email" />
           <Label id={email_label} label="email" />
         </div>
         <div className={form_group}>
-          <Input id={subject} type="text" label="Subject" />
+          <Input id={subject} type="text" />
           <Label id={subject_label} label="subject" />
         </div>
-        <div className="form_group">
+        <div className={form_group}>
           <Textarea
             id={message}
             name="message"
-            placeholder="Enter your message here..."
+            // placeholder="Enter your message here..."
           />
+          <Label id={message_label} label="Enter your message here..." />
         </div>
       </form>
     </Layout>
