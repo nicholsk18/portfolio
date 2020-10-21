@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import PageHeader from '../components/PageHeader'
-import { welcome_section, home_img } from '../../public/assets/css/home.module.css'
+import { welcome_section, home_img, mobile_placeholder } from '../../public/assets/css/home.module.css'
 import Layout from '../components/Layout'
 
 const Main = () => {
@@ -21,6 +21,9 @@ const Main = () => {
           <img src="/assets/images/solving-problems-test.png" alt="" />
         </div>
       </div>
+        <div className={mobile_placeholder}>
+            <p>Best viewed on desktop, mobile coming soon</p>
+        </div>
     </Layout>
   )
 }

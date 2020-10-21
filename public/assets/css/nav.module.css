@@ -45,3 +45,9 @@
 .nav_link:hover {
   background-color: #b8d8d8;
 }
+
+@media only screen and (max-width: 687px) {
+  #navbar {
+    display: none;
+  }
+}

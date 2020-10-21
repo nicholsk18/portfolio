@@ -6,16 +6,17 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start",
+    "start": "next start"
   },
   "author": "Karson Nichols",
   "license": "MIT",
   "dependencies": {
     "next": "^9.5.5",
-    "prettierrc": "0.0.0-5",
     "prop-types": "^15.7.2",
     "react": "^16.14.0",
     "react-dom": "^16.14.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "prettierrc": "0.0.0-5"
+  }
 }
