@@ -19,19 +19,19 @@ const Nav = () => {
           <a className={`${nav_link} ${active}`}>Home</a>
         </Link>
 
-        <Link href="/Projects">
+        <Link href="/projects">
           <a className={nav_link}>Projects</a>
         </Link>
 
-        <Link href="/Skills">
+        <Link href="/skills">
           <a className={nav_link}>Skills</a>
         </Link>
 
-        <Link href="/About">
+        <Link href="/about">
           <a className={nav_link}>About Me</a>
         </Link>
 
-        <Link href="/Contact">
+        <Link href="/contact">
           <a className={nav_link}>Contact</a>
         </Link>
       </div>
