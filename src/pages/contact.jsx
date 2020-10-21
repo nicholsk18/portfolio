@@ -1,3 +1,4 @@
+import React from 'react'
 import Head from 'next/head'
 import Layout from '../components/Layout'
 import Input from '../components/Input'

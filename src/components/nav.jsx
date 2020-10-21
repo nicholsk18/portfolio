@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import ActiveLink from "./ActiveLink";
 import {
   navbar,
   nav_item,
@@ -9,31 +10,33 @@ import {
 } from '../../public/assets/css/nav.module.css'
 
 const Nav = () => {
+
   return (
     <nav id={navbar}>
       <h2 id={nav_title}>Karson Nichols</h2>
       <p id={nav_sub_title}>Web Developer</p>
 
       <div id={nav_item}>
-        <Link href="/">
-          <a className={`${nav_link} ${active}`}>Home</a>
-        </Link>
+        <ActiveLink activeClassName={active} href="/">
+          <a className={nav_link}>Home</a>
+        </ActiveLink>
 
-        <Link href="/projects">
+        <ActiveLink activeClassName={active} href="/projects">
           <a className={nav_link}>Projects</a>
-        </Link>
+        </ActiveLink>
 
-        <Link href="/skills">
+        <ActiveLink activeClassName={active} href="/skills">
           <a className={nav_link}>Skills</a>
-        </Link>
+        </ActiveLink>
 
-        <Link href="/about">
+        <ActiveLink activeClassName={active} href="/about">
           <a className={nav_link}>About Me</a>
-        </Link>
+        </ActiveLink>
 
-        <Link href="/contact">
+        <ActiveLink activeClassName={active} href="/contact">
           <a className={nav_link}>Contact</a>
-        </Link>
+        </ActiveLink>
+
       </div>
     </nav>
   )
