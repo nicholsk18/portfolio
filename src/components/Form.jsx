@@ -9,7 +9,8 @@ import {
     input_email,
     input_subject,
     input_message,
-    submit_button
+    submit_btn_container,
+    submit_btn
 } from "../../public/assets/css/input.module.css";
 
 const Form = () => {
@@ -59,8 +60,8 @@ const Form = () => {
                 </label>
             </div>
 
-            <div className={submit_button}>
-                <button>Submit</button>
+            <div className={submit_btn_container}>
+                <button className={submit_btn}>Submit</button>
             </div>
         </form>
     )

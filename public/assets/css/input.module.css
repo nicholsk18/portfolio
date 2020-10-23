@@ -113,6 +113,21 @@
   left: 0;
 }
 
-.submit_button {
+.submit_btn_container {
   text-align: center;
+}
+.submit_btn {
+  background-color: #fe5f55;
+  border: 1px solid #fe5f55;
+  color: #EEF5DB;
+  padding: 10px 50px;
+  font-weight: 700;
+  cursor: pointer;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.submit_btn:hover {
+  background-color: #fd6f65;
 }
