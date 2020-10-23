@@ -14,10 +14,10 @@
   margin: 25px 0;
 }
 
-#name,
-#email,
-#subject,
-#message {
+#input_name,
+#input_email,
+#input_subject,
+#input_message {
   position: relative;
   padding-top: 20px;
   margin-left: 30px;
@@ -28,20 +28,21 @@
   font-size: 1.2rem;
   background-color: inherit;
 }
-#message {
+#input_message {
+  padding-top: 20px;
   height: 250px;
 }
-#name:focus,
-#email:focus,
-#subject:focus,
-#message:focus {
+#input_name:focus,
+#input_email:focus,
+#input_subject:focus,
+#input_message:focus {
   outline: none;
 }
 
-#name:focus + .animate_line,
-#email:focus + .animate_line,
-#subject:focus + .animate_line,
-#message:focus + .animate_line {
+#input_name:focus + .animate_line,
+#input_email:focus + .animate_line,
+#input_subject:focus + .animate_line,
+#input_message:focus + .animate_line {
   width: 90%;
   margin-left: 30px;
   bottom: 1px;
@@ -77,10 +78,10 @@
 /*  transition: 0.3s ease all;*/
 /*}*/
 
-#name:focus ~ .input_label,
-#email:focus ~ .input_label,
-#subject:focus ~ .input_label,
-#message:focus ~ .input_label {
+#input_name:focus ~ .input_label,
+#input_email:focus ~ .input_label,
+#input_subject:focus ~ .input_label,
+#input_message:focus ~ .input_label {
   font-weight: 700;
   opacity: 1;
   top: 0;
@@ -91,10 +92,12 @@
 }
 
 .label_active {
+  position: absolute;
   font-weight: 700;
   opacity: 1;
   top: 0;
   left: 30px;
+  height: 0;
   bottom: 100px;
   color: #EEF5DB;
   font-size: 1rem;
@@ -108,4 +111,8 @@
   transition: 0.3s width ease-in-out;
   bottom: 0;
   left: 0;
+}
+
+.submit_button {
+  text-align: center;
 }
