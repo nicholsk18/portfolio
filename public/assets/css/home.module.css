@@ -17,10 +17,10 @@
   margin: 0 auto;
   text-align: center;
 }
-.mobile_placeholder{
+.mobile_placeholder {
   display: none;
 }
-@media only screen and (max-width: 687px) {
+@media only screen and (max-width: 767px) {
   .mobile_placeholder {
     display: block;
     font-size: 2rem;
