@@ -9,6 +9,16 @@ const About = () => {
         <title>About Karson | Karson Nichols</title>
       </Head>
       <PageHeader text="About Me" />
+
+      <div>
+        <div>
+          <h2></h2>
+          <p></p>
+        </div>
+        <div>
+          <img src="/assets/images/thinking-no-bg.png" alt="" />
+        </div>
+      </div>
     </Layout>
   )
 }
