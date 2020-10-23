@@ -1,6 +1,6 @@
-const Label = ({ id, label }) => {
+const Label = ({ className, label }) => {
   return (
-    <label id={id} htmlFor={label}>
+    <label className={className} htmlFor={label}>
       {label}
     </label>
   )

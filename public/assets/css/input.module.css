@@ -48,10 +48,7 @@
   background-color: #EEF5DB;
 }
 
-#name_label,
-#email_label,
-#subject_label,
-#message_label {
+.input_label {
   color: #EEF5DB;
   position: absolute;
   top: 15px;
@@ -68,25 +65,32 @@
   user-select: none;
 }
 
-#name_label:after,
-#email_label:after,
-#subject_label:after,
-#message_label:after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 10%;
-  height: 2px;
-  width: 10px;
-  visibility: hidden;
-  background-color: #6a8d73;
-  transition: 0.3s ease all;
+/*.input_label:after {*/
+/*  content: '';*/
+/*  position: absolute;*/
+/*  bottom: 0;*/
+/*  left: 10%;*/
+/*  height: 2px;*/
+/*  width: 10px;*/
+/*  visibility: hidden;*/
+/*  background-color: #6a8d73;*/
+/*  transition: 0.3s ease all;*/
+/*}*/
+
+#name:focus ~ .input_label,
+#email:focus ~ .input_label,
+#subject:focus ~ .input_label,
+#message:focus ~ .input_label {
+  font-weight: 700;
+  opacity: 1;
+  top: 0;
+  left: 30px;
+  bottom: 100px;
+  color: #EEF5DB;
+  font-size: 1rem;
 }
 
-#name:focus ~ #name_label,
-#email:focus ~ #email_label,
-#subject:focus ~ #subject_label,
-#message:focus ~ #message_label {
+.label_active {
   font-weight: 700;
   opacity: 1;
   top: 0;
