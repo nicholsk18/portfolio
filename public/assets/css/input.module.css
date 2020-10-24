@@ -138,4 +138,35 @@
   }
 }
 @media only screen and (max-width: 768px) {
+  #contact_form {
+    width: 350px;
+    margin-top: 1rem;
+  }
+  #input_name,
+  #input_email,
+  #input_subject,
+  #input_message {
+    margin-left: 10px;
+  }
+  .input_label {
+    left: 20px;
+  }
+  #input_message {
+    height: 200px;
+  }
+  #input_name:focus + .animate_line,
+  #input_email:focus + .animate_line,
+  #input_subject:focus + .animate_line,
+  #input_message:focus + .animate_line {
+    margin-left: 10px;
+  }
+  #input_name:focus ~ .input_label,
+  #input_email:focus ~ .input_label,
+  #input_subject:focus ~ .input_label,
+  #input_message:focus ~ .input_label {
+    left: 10px;
+  }
+  .label_active {
+    left: 10px;
+  }
 }

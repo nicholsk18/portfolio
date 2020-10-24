@@ -37,11 +37,14 @@
   }
 }
 @media only screen and (max-width: 768px) {
+  .about_container:last-child {
+    margin-bottom: 50px;
+  }
   .about_section {
     margin: 1rem;
   }
   .about_text {
-    width: 300px;
+    width: 100%;
     max-width: 0 auto;
   }
   .about_img {

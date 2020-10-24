@@ -2,6 +2,7 @@
 /* NAVBAR START
 /***********************************/
 #navbar {
+  display: block;
   background-color: #4f6367;
   width: 300px;
   text-align: center;
@@ -44,8 +45,27 @@
   background-color: #b8d8d8;
 }
 
-@media only screen and (max-width: 687px) {
+.nav_mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
   #navbar {
     display: none;
+  }
+  .nav_mobile {
+    display: block;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+  #nav_item {
+    display: flex;
+    flex-direction: row;
+    height: 45px;
+  }
+  .nav_link {
+    text-align: center;
+    margin: 0 auto;
   }
 }
