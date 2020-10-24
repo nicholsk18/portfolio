@@ -17,6 +17,11 @@
   margin: 10px 0 20px;
   text-align: center;
 }
+
+/* random */
+.text_center {
+  text-align: center;
+}
 @media only screen and (max-width: 768px) {
   #page_title {
     font-size: 3.5rem;
