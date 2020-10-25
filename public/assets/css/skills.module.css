@@ -1,0 +1,32 @@
+.skills_container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: space-evenly;
+}
+
+.skill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: rgba(122, 158, 159, 0.5);
+  width: 150px;
+  height: 125px;
+  z-index: 10;
+}
+.skill:after {
+  content: '';
+  position: absolute;
+  background-color: #7a9e9f6e;
+  z-index: -1;
+  width: 150px;
+  height: 125px;
+  left: 10px;
+  top: 10px;
+}
+
+.skill_offset {
+  margin-top: 80px;
+  margin-bottom: -20px;
+}
