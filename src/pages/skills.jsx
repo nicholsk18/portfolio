@@ -55,7 +55,9 @@ const Skills = () => {
         <div className={skill}>
           <img src="/assets/icons/jquery.png" alt="" />
         </div>
-        <div className={`${skill} ${skill_offset}`}></div>
+        <div className={`${skill} ${skill_offset}`}>
+          <img src="/assets/icons/java.png" alt="" />
+        </div>
         <div className={skill}>icon box</div>
         <div className={`${skill} ${skill_offset}`}></div>
         <div className={skill}>icon box</div>
