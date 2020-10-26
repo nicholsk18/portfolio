@@ -45,15 +45,14 @@
   background-color: #b8d8d8;
 }
 
-.nav_mobile {
-  display: none;
-}
-
 @media only screen and (max-width: 768px) {
-  #navbar {
+  #nav_title {
     display: none;
   }
-  .nav_mobile {
+  #nav_sub_title {
+    display: none;
+  }
+  #navbar {
     display: block;
     position: fixed;
     width: 100%;
