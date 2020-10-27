@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import ActiveLink from './ActiveLink'
 import {
   navbar,
@@ -7,7 +6,6 @@ import {
   nav_sub_title,
   nav_link,
   active,
-  nav_mobile,
 } from '../../public/assets/css/nav.module.css'
 
 const Nav = () => {
