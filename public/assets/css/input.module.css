@@ -170,3 +170,24 @@
     left: 10px;
   }
 }
+@media only screen and (max-width: 413px) {
+  #contact_form {
+    width: 280px;
+  }
+  .form_group {
+    margin: 10px 0;
+  }
+  #input_name,
+  #input_email,
+  #input_subject,
+  #input_message,
+  .input_label {
+    font-size: 0.8rem;
+  }
+  .label_active {
+    font-size: 0.5rem;
+  }
+  #input_message {
+    height: 150px;
+  }
+}

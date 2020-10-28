@@ -32,13 +32,19 @@ const About = () => {
           </div>
 
           <div className={about_img}>
-            <img src="/assets/images/thinking-no-bg.png" alt="man thinking by computer" />
+            <img
+              src="/assets/images/thinking-no-bg.png"
+              alt="man thinking by computer"
+            />
           </div>
         </div>
 
         <div className={`${about_section} ${reverse}`}>
           <div className={about_img}>
-            <img src="/assets/images/version_control-no-bg.png" alt="version control" />
+            <img
+              src="/assets/images/version_control-no-bg.png"
+              alt="version control"
+            />
           </div>
           <div className={about_text}>
             <h2>The Challenge</h2>
@@ -68,7 +74,10 @@ const About = () => {
           </div>
 
           <div className={about_img}>
-            <img src="/assets/images/programming-no-bg.png" alt="man programming" />
+            <img
+              src="/assets/images/programming-no-bg.png"
+              alt="man programming"
+            />
           </div>
         </div>
       </div>
