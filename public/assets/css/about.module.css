@@ -45,7 +45,7 @@
   }
   .about_text {
     width: 100%;
-    max-width: 0 auto;
+    margin: 0 auto;
   }
   .about_img {
     width: 250px;
