@@ -18,6 +18,8 @@ const Contact = () => {
         together.
       </p>
       <Form />
+
+      <p className={text_center}>The form is not yet functional, please email <a href="mailto:info@karsonnichols.com">info@karsonnichols.com</a></p>
     </Layout>
   )
 }
