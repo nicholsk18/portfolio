@@ -5,7 +5,7 @@ import {
   skills_container,
   skill,
   skill_offset,
-    skills_offset_container
+  skills_offset_container,
 } from '../../public/assets/css/skills.module.css'
 
 const Skills = () => {
@@ -31,12 +31,12 @@ const Skills = () => {
       </div>
 
       <div className={skills_offset_container}>
-          <div className={`${skill} ${skill_offset}`}>
-              <img src="/assets/icons/js.png" alt="" />
-          </div>
-          <div className={`${skill} ${skill_offset}`}>
-              <img src="/assets/icons/html.png" alt="" />
-          </div>
+        <div className={`${skill} ${skill_offset}`}>
+          <img src="/assets/icons/js.png" alt="" />
+        </div>
+        <div className={`${skill} ${skill_offset}`}>
+          <img src="/assets/icons/html.png" alt="" />
+        </div>
       </div>
 
       <div className={skills_container}>
@@ -51,15 +51,14 @@ const Skills = () => {
         </div>
       </div>
 
-
-        <div className={skills_offset_container}>
-            <div className={`${skill} ${skill_offset}`}>
-                <img src="/assets/icons/scss.png" alt="" />
-            </div>
-            <div className={`${skill} ${skill_offset}`}>
-                <img src="/assets/icons/wordpress.png" alt="" />
-            </div>
+      <div className={skills_offset_container}>
+        <div className={`${skill} ${skill_offset}`}>
+          <img src="/assets/icons/scss.png" alt="" />
         </div>
+        <div className={`${skill} ${skill_offset}`}>
+          <img src="/assets/icons/wordpress.png" alt="" />
+        </div>
+      </div>
 
       <div className={skills_container}>
         <div className={skill}>
@@ -69,12 +68,12 @@ const Skills = () => {
         <div className={skill}>icon box</div>
       </div>
 
-        <div className={skills_offset_container}>
-            <div className={`${skill} ${skill_offset}`}>
-                <img src="/assets/icons/java.png" alt="" />
-            </div>
-            <div className={`${skill} ${skill_offset}`}></div>
+      <div className={skills_offset_container}>
+        <div className={`${skill} ${skill_offset}`}>
+          <img src="/assets/icons/java.png" alt="" />
         </div>
+        <div className={`${skill} ${skill_offset}`}></div>
+      </div>
     </Layout>
   )
 }

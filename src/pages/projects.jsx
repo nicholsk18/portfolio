@@ -2,8 +2,8 @@ import Head from 'next/head'
 import Layout from '../components/Layout'
 import PageHeader from '../components/PageHeader'
 import {
-    projects_container,
-    project
+  projects_container,
+  project,
 } from '../../public/assets/css/projects.module.css'
 
 const Projects = () => {
@@ -16,7 +16,7 @@ const Projects = () => {
 
       <div className={projects_container}>
         <div className={project}>
-            <img src="/assets/images/projects/willcannon-project.png" alt=""/>
+          <img src="/assets/images/projects/willcannon-project.png" alt="" />
         </div>
       </div>
     </Layout>
