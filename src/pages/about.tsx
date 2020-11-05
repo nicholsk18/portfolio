@@ -1,13 +1,7 @@
 import Head from 'next/head'
 import Layout from '../components/Layout'
 import PageHeader from '../components/PageHeader'
-import {
-  about_container,
-  about_section,
-  reverse,
-  about_img,
-  about_text,
-} from '../../public/assets/css/about.module.css'
+import style from '../../public/assets/css/about.module.css'
 
 const About = () => {
   return (
@@ -15,11 +9,11 @@ const About = () => {
       <Head>
         <title>About Karson | Karson Nichols</title>
       </Head>
-      <PageHeader text="About Me" />
+      <PageHeader text="About Me" pre="" />
 
-      <div className={about_container}>
-        <div className={about_section}>
-          <div className={about_text}>
+      <div className={style.about_container}>
+        <div className={style.about_section}>
+          <div className={style.about_text}>
             <h2>Path To Programming</h2>
             <p>
               I started learning computer science my junior year of college. I
@@ -31,7 +25,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className={about_img}>
+          <div className={style.about_img}>
             <img
               src="/assets/images/thinking-no-bg.png"
               alt="man thinking by computer"
@@ -39,14 +33,14 @@ const About = () => {
           </div>
         </div>
 
-        <div className={`${about_section} ${reverse}`}>
-          <div className={about_img}>
+        <div className={`${style.about_section} ${style.reverse}`}>
+          <div className={style.about_img}>
             <img
               src="/assets/images/version_control-no-bg.png"
               alt="version control"
             />
           </div>
-          <div className={about_text}>
+          <div className={style.about_text}>
             <h2>The Challenge</h2>
             <p>
               Altho learning programming was really fun it does come with a lot
@@ -60,8 +54,8 @@ const About = () => {
           </div>
         </div>
 
-        <div className={about_section}>
-          <div className={about_text}>
+        <div className={style.about_section}>
+          <div className={style.about_text}>
             <h2>From A Hobby To A Career</h2>
             <p>
               After I finished contributing to the open source project I decided
@@ -73,7 +67,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className={about_img}>
+          <div className={style.about_img}>
             <img
               src="/assets/images/programming-no-bg.png"
               alt="man programming"

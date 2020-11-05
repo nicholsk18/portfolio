@@ -25,7 +25,10 @@
     "validator": "^13.1.17"
   },
   "devDependencies": {
+    "@types/node": "^14.14.6",
+    "@types/react": "^16.9.55",
     "prettier": "^2.1.2",
-    "prettierrc": "0.0.0-5"
+    "prettierrc": "0.0.0-5",
+    "typescript": "^4.0.5"
   }
 }

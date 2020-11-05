@@ -1,10 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import PageHeader from '../components/PageHeader'
-import {
-  welcome_section,
-  home_img,
-} from '../../public/assets/css/home.module.css'
+import style from '../../public/assets/css/home.module.css'
 import Layout from '../components/Layout'
 
 const Main = () => {
@@ -17,9 +14,9 @@ const Main = () => {
           content="Freelance Web developer that creates beautiful websites"
         />
       </Head>
-      <div id={welcome_section}>
+      <div id={style.welcome_section}>
         <PageHeader pre="I am a" text="Developer" />
-        <div className={home_img}>
+        <div className={style.home_img}>
           <img src="/assets/images/solving-problems-no-bg.png" alt="" />
         </div>
       </div>

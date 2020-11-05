@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import Layout from '../components/Layout'
-import { error_title } from '../../public/assets/css/404.module.css'
+import style from '../../public/assets/css/404.module.css'
 
 const CustomError = () => {
   return (
@@ -11,7 +11,7 @@ const CustomError = () => {
       </Head>
 
       <div style={{ textAlign: 'center' }}>
-        <h2 className={error_title}>&lt; 404 /&gt;</h2>
+        <h2 className={style.error_title}>&lt; 404 /&gt;</h2>
         <p>Page not found</p>
         <p>
           This page was taken away. Try going{' '}
