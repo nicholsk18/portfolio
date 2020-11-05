@@ -19,6 +19,30 @@ const Form = () => {
   const [subject, setSubject] = useState('')
   const [message, setMessage] = useState('')
 
+  function handleSubmit(event) {
+    event.preventDefault()
+
+    const createForm = {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ name, email, subject, message }),
+    }
+
+    fetch('/api/contact', createForm)
+      .then((res) => {
+        console.log(res)
+        if (res.status === 400) {
+        } else if (res.status === 404) {
+        }
+        console.log(res.status)
+      })
+      .catch((error) => {
+        console.log(error)
+      })
+  }
+
   // If user put input in change the class name
   // this way animation will stay up
   const checkActive = (inputLength) => {
@@ -26,7 +50,7 @@ const Form = () => {
   }
 
   return (
-    <form id={contact_form} action="">
+    <form id={contact_form} onSubmit={handleSubmit}>
       <div className={form_group}>
         <input
           id={input_name}

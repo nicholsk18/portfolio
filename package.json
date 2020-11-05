@@ -7,7 +7,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "format": "prettier \"src/**/*.{jsx, html}\" --write"
+    "format": "prettier \"src/**/*.{jsx, js, html}\" --write"
   },
   "author": "Karson Nichols",
   "license": "MIT",
@@ -18,12 +18,14 @@
     "next": "^10.0.0",
     "next-connect": "^0.9.1",
     "next-env": "^1.1.1",
-    "prettier": "^2.1.2",
+    "nodemailer": "^6.4.14",
     "prop-types": "^15.7.2",
     "react": "^16.14.0",
-    "react-dom": "^16.14.0"
+    "react-dom": "^16.14.0",
+    "validator": "^13.1.17"
   },
   "devDependencies": {
+    "prettier": "^2.1.2",
     "prettierrc": "0.0.0-5"
   }
 }
