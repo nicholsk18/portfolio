@@ -13,7 +13,9 @@ const Projects = () => {
 
       <div className={style.projects_container}>
         <div className={style.project}>
-          <img src="/assets/images/projects/willcannon-project.png" alt="" />
+            <a href="https://willcannongolf.com">
+              <img src="/assets/images/projects/willcannon-project.png" alt="" />
+            </a>
         </div>
       </div>
     </Layout>
