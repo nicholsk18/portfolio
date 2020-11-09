@@ -23,7 +23,7 @@ const handler = nc()
             }
 
             res.status(200)
-            res.end()
+            res.json({"message": "The message was a success"})
             return
         })
 

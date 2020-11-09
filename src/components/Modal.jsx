@@ -1,40 +1,35 @@
-import React, { useState, useEffect} from 'react'
-import CSS from 'csstype';
+import React, { useState, useEffect } from 'react'
+import styles from '../../public/assets/css/modal.module.css'
 
 const Modal = ({ message }) => {
-    console.log(sessionStorage)
-    const [isVisible, setIsVisible] = useState(false)
+  const [isVisible, setIsVisible] = useState(false)
+  const [serverCode, setServerCode] = useState('')
 
-    const showModal = () => {
-        setIsVisible(true)
+  const closeModal = () => {
+    setIsVisible(false)
+    window.location.reload()
+    sessionStorage.clear()
+  }
+
+  useEffect(() => {
+    if (sessionStorage.showModal) {
+      setIsVisible(true)
+      setServerCode(sessionStorage.code)
     }
+  })
 
-    const closeModal = () => {
-        setIsVisible(false)
-        sessionStorage.clear()
-    }
+  return isVisible ? (
+    <div className={styles.modal_container}>
+      <div className={styles.modal}>
+        <h2>Thank you for your submission</h2>
 
-    useEffect(() => {
-        if (sessionStorage.showModal) {
-            setIsVisible(true)
-        }
-    })
-
-    const showModalClass = () => {
-        return isVisible ? {display: 'block'} : ''
-    }
-
-    return (
-        isVisible ? (
-        <div style= {showModalClass()}>
-            {message}
-            <br />
-            <button onClick={closeModal}>
-                click me
-            </button>
+        {message}
+        <div>
+          <button className={styles.btn} onClick={closeModal}>Close</button>
         </div>
-    ) : null
-    )
+      </div>
+    </div>
+  ) : null
 }
 
 export default Modal
