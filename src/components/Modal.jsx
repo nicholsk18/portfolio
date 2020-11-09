@@ -1,4 +1,5 @@
 import React, { useState, useEffect} from 'react'
+import CSS from 'csstype';
 
 const Modal = ({ message }) => {
     console.log(sessionStorage)
@@ -19,11 +20,13 @@ const Modal = ({ message }) => {
         }
     })
 
-    const showModalClass = () => (isVisible ? { display: 'block'} : '' )
+    const showModalClass = () => {
+        return isVisible ? {display: 'block'} : ''
+    }
 
     return (
         isVisible ? (
-        <div style={showModalClass()}>
+        <div style= {showModalClass()}>
             {message}
             <br />
             <button onClick={closeModal}>
