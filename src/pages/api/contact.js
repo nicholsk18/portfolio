@@ -13,7 +13,7 @@ const handler = nc()
 
         const messageObj = {
             from: email,
-            to: process.env.USER_EMAIL,
+            to: process.env.TRANSPORT_EMAIL,
             subject: subject,
             html: `${name} ${message}`
         }
