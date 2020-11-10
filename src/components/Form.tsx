@@ -34,16 +34,11 @@ const Form = () => {
           return res.json()
       }).then((data) => {
           setServerMessage(data.message)
+          sessionStorage.setItem("showModal", "true")
     })
       .catch((error) => {
         console.log(error)
       })
-
-      setName('')
-      setEmail('')
-      setSubject('')
-      setMessage('')
-      sessionStorage.setItem("showModal", "true")
   }
 
   // If user put input in change the class name
