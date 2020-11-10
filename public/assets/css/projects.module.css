@@ -4,7 +4,6 @@
     justify-content: space-evenly;
 }
 .project {
-    position: relative;
     width: 1200px;
 }
 .project_img {
@@ -59,14 +58,23 @@
     .project {
         width: 900px;
     }
+    .project_overlay {
+        width: 900px;
+    }
 }
 @media only screen and (max-width: 1024px) {
     .project {
         width: 500px;
     }
+    .project_overlay {
+        width: 500px;
+    }
 }
 @media only screen and (max-width: 550px) {
     .project {
+        width: 350px;
+    }
+    .project_overlay {
         width: 350px;
     }
 }
