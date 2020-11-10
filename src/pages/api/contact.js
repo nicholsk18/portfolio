@@ -13,7 +13,7 @@ const handler = nc()
 
         const messageObj = {
             from: email,
-            to: process.env.USER_EMAIL,
+            to: process.env.TRANSPORT_EMAIL,
             subject: subject,
             html: `${name} ${message}`
         }
@@ -23,7 +23,7 @@ const handler = nc()
             }
 
             res.status(200)
-            res.end()
+            res.json({"message": "The message was a success"})
             return
         })
 
