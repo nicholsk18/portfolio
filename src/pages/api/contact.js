@@ -19,12 +19,10 @@ const handler = nc()
         }
         transport.sendMail(messageObj, (error, info) => {
             if (error) {
-                return res.status(404)
+                return res.status(404).json({"message": "the message was not successful"})
             }
 
-            res.status(200)
-            res.json({"message": "The message was a success"})
-            return
+            return res.status(200).json({"message": "The message was a success"})
         })
 
     })
