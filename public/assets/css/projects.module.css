@@ -4,10 +4,56 @@
     justify-content: space-evenly;
 }
 .project {
+    position: relative;
     width: 1200px;
 }
-.project img {
+.project_img {
     width: 100%;
+}
+.project_overlay {
+    position: relative;
+    width: 1200px;
+}
+.project_overlay:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(33, 33, 33, 0.7);
+    z-index: 1;
+}
+.project_btns_container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+.project_btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 6px;
+    color: #fff;
+    background-color: green;
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    -moz-transition: all 0.7s ease;
+    -o-transition: all 0.7s ease;
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+    z-index: 5;
 }
 @media only screen and (max-width: 1500px) {
     .project {

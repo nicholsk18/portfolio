@@ -25,7 +25,9 @@ const Modal = ({ message }) => {
 
         {message}
         <div>
-          <button className={styles.btn} onClick={closeModal}>Close</button>
+          <button className={styles.btn} onClick={closeModal}>
+            Close
+          </button>
         </div>
       </div>
     </div>
