@@ -7,7 +7,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "format": "prettier \"src/**/*.{jsx, js, html}\" --write"
+    "format": "prettier \"src/**/*.{jsx, js, tsx, html}\" --write"
   },
   "author": "Karson Nichols",
   "license": "MIT",
