@@ -7,9 +7,10 @@ const handler = nc()
     .post((req, res) => {
         const { name, email, subject, message } = req.body
 
-        // if (!validator.isEmail(email)) {
-        //     return res.status(400)
-        // }
+        if (!validator.isEmail(email)) {
+            console.log(email)
+            return res.status(400).json({ "message": "the email field was invalid" })
+        }
 
         const messageObj = {
             from: email,
@@ -19,10 +20,10 @@ const handler = nc()
         }
         transport.sendMail(messageObj, (error, info) => {
             if (error) {
-                return res.status(404).json({"message": "the message was not successful"})
+                return res.status(404).json({ "message": "the message was not successful" })
             }
 
-            return res.status(200).json({"message": "The message was a success"})
+            return res.status(200).json({ "message": "The message was a success" })
         })
 
     })
